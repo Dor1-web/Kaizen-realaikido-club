@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Эко дзен - Клуб реального айкидо</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --main-bg: #121212;
+      --main-accent: #4db38b;
+      --main-dark: #1f1f1f;
+      --highlight: #76ffc4;
+      --header-overlay: rgba(0, 0, 0, 0.7);
+      --white: #ffffff;
+      --text-light: #e0e0e0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--main-bg);
+      color: var(--text-light);
+    }
+    header {
+      background: linear-gradient(var(--header-overlay), var(--header-overlay)), url('https://images.unsplash.com/photo-1589758438368-04a144d1b9d1?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      color: var(--white);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-family: 'Yeseva One', serif;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: #0e0e0e;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: var(--white);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--highlight);
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--main-dark);
+      color: var(--white);
+      margin-top: 2rem;
+    }
+    h2 {
+      color: var(--main-accent);
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .quote {
+      font-style: italic;
+      margin-top: 1rem;
+      color: var(--main-accent);
+    }
+    .contact-info i {
+      margin-right: 0.5rem;
+      color: var(--highlight);
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Клуб реального айкидо «Эко дзен»</h1>
+    <p>Боевые традиции и современная эффективность</p>
+  </header>
+
+  <nav>
+    <a href="#about">О клубе</a>
+    <a href="#aikido">Айкидо</a>
+    <a href="#schedule">Расписание</a>
+    <a href="https://example.com/program" target="_blank">Программа</a>
+    <a href="#media">Фото и видео</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section id="about">
+    <h2>О клубе</h2>
+    <p>Клуб реального айкидо «Эко дзен» — это пространство для изучения настоящего прикладного боевого искусства. Здесь вас обучат не только технике самозащиты, но и принципам уверенности, концентрации и дисциплины. Под руководством опытных инструкторов вы освоите эффективные методы обороны, адаптированные под реальные жизненные ситуации.</p>
+  </section>
+
+  <section id="aikido">
+    <h2>Что такое реальное айкидо?</h2>
+    <p>Реальное айкидо — это современное прикладное направление традиционного японского айкидо. Оно ориентировано на практическое применение в самообороне, при этом сохраняя философию ненасильственного противодействия. В реальном айкидо используются простые, мощные и проверенные временем приёмы, эффективные как в тренировке, так и в реальных условиях.</p>
+    <p>Занятия проводятся <strong>только для мужчин в возрасте от 6 до 60 лет</strong> и не требуют специальной физической подготовки.</p>
+  </section>
+
+  <section id="schedule">
+    <h2>Расписание</h2>
+    <p>Занятия проходят 3 раза в неделю:</p>
+    <ul>
+      <li>Вторник — 19:00–20:00</li>
+      <li>Четверг — 19:00–20:00</li>
+      <li>Суббота — 19:00–20:00</li>
+    </ul>
+    <p><strong>Адрес зала:</strong> <a href="https://go.2gis.com/Apskc" target="_blank" style="color: var(--highlight); text-decoration: underline;">перейти на карту</a></p>
+  </section>
+
+  <section id="media">
+    <h2>Фото и видео</h2>
+    <p>Здесь будут размещены фотографии и видеозаписи с тренировок и мероприятий клуба.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-phone"></i><strong>По вопросам:</strong> <a href="tel:+77784093685" style="color: var(--highlight); text-decoration: none;">8 (778) 409 36 85</a></p>
+      <p><i class="fab fa-whatsapp"></i><strong>WhatsApp:</strong> <a href="https://wa.me/77074541394" style="color: var(--highlight); text-decoration: none;">8 (707) 454 13 94</a></p>
+      <p><i class="fas fa-user-check"></i><strong>Для записи:</strong> <a href="tel:+77072159660" style="color: var(--highlight); text-decoration: none;">8 (707) 215 96 60</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Клуб реального айкидо «Эко дзен». Все права защищены.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const options = {
+      threshold: 0.1
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
